@@ -1,5 +1,2 @@
-# No third-party packages needed — pure Python stdlib only.
-# Python 3.10+ required (for list[dict] type hints without 'from __future__').
-#
-# If you want to run the optional Flask dev server (see README), add:
-#   flask==3.0.3
+flask==3.0.3
+flask-cors==4.0.1
