@@ -1,146 +1,146 @@
 {
   "1": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1825.8677,
+    "peak_gbps": 3172.96,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "2": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 3850.062,
+    "peak_gbps": 7150.9984,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "3": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1889.7204,
+    "peak_gbps": 4062.9792,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "4": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1542.1665,
+    "peak_gbps": 2869.5744,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "5": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1860.2733,
+    "peak_gbps": 4189.248,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "6": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 3910.7025,
+    "peak_gbps": 8048.0288,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "7": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 4029.4169,
+    "peak_gbps": 7951.7984,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "8": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 3959.4598,
+    "peak_gbps": 8081.7856,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "9": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1911.3162,
+    "peak_gbps": 3912.7648,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "10": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 3831.3109,
+    "peak_gbps": 7933.3632,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "11": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1629.236,
+    "peak_gbps": 3131.0496,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "12": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1692.9782,
+    "peak_gbps": 3084.0768,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "13": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 5159.3196,
+    "peak_gbps": 8212.2208,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "14": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1659.9434,
+    "peak_gbps": 3281.712,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "15": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 4454.4535,
+    "peak_gbps": 9751.1456,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "16": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 4767.7627,
+    "peak_gbps": 7653.3856,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "17": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1798.7394,
+    "peak_gbps": 2913.2992,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "18": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 3444.1225,
+    "peak_gbps": 6435.9232,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "19": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 3870.3254,
+    "peak_gbps": 8086.0864,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "20": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1825.6806,
+    "peak_gbps": 3180.8,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "21": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1708.8101,
+    "peak_gbps": 3211.5328,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "22": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 1652.8501,
+    "peak_gbps": 3220.2688,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "23": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 4255.8783,
+    "peak_gbps": 8591.9456,
+    "active_slots": 60,
+    "total_slots": 60
   },
   "24": {
-    "avg_gbps": 0.0,
-    "peak_gbps": 0.0,
-    "active_slots": 0,
-    "total_slots": 0
+    "avg_gbps": 3628.9366,
+    "peak_gbps": 6862.352,
+    "active_slots": 60,
+    "total_slots": 60
   }
 }
