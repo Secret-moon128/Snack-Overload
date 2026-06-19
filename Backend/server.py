@@ -1,32 +1,25 @@
 """
-server.py  —  Flask API for FH-OPT
-Endpoints:
-  GET  /api/status          — pipeline status + last results
-  POST /api/run             — trigger full pipeline
-  GET  /api/topology        — topology_result.json
-  GET  /api/capacity        — capacity_result.json
-  GET  /api/graph/<link>    — graph data for one link
-  GET  /api/heatmap         — heatmap data
-  GET  /api/cell_stats      — cell stats
+server.py  v3  —  Flask API for FH-OPT
+Serves on http://localhost:5050
 """
 
-import os, json, threading, time, subprocess, sys
-from flask import Flask, jsonify, send_from_directory
+import os, json, threading, time, importlib, math
+from flask import Flask, jsonify
 from flask_cors import CORS
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(BASE, "data")
+os.chdir(BASE)
 
-app = Flask(__name__)
+app   = Flask(__name__)
 CORS(app)
 
-# ── Pipeline state ───────────────────────────────────────────────
 state = {
-    "running": False,
-    "step": 0,          # 0=idle 1=clean 2=topology 3=capacity 4=aggregate 5=done
+    "running":   False,
+    "step":      0,
     "step_name": "idle",
-    "error": None,
-    "last_run": None,
+    "error":     None,
+    "last_run":  None,
 }
 lock = threading.Lock()
 
@@ -41,45 +34,36 @@ def read_json(filename):
 
 def run_pipeline():
     with lock:
-        state["running"] = True
-        state["error"]   = None
-        state["step"]    = 0
+        state.update(running=True, error=None, step=0)
 
     steps = [
-        (1, "Cleaning data",          "data_cleaner", "clean_all"),
+        (1, "Cleaning .dat files",    "data_cleaner", "clean_all"),
         (2, "Identifying topology",   "topology",     "run_topology"),
         (3, "Estimating capacity",    "capacity",     "run_capacity"),
-        (4, "Building frontend data", "aggregator",   "run_aggregator"),
+        (4, "Building heatmap data",  "aggregator",   "run_aggregator"),
     ]
 
     try:
-        for step_num, step_name, module_name, fn_name in steps:
+        for num, name, mod_name, fn_name in steps:
             with lock:
-                state["step"]      = step_num
-                state["step_name"] = step_name
-
-            # dynamic import so we always get fresh module
-            import importlib
-            mod = importlib.import_module(module_name)
+                state.update(step=num, step_name=name)
+            mod = importlib.import_module(mod_name)
             importlib.reload(mod)
-            fn = getattr(mod, fn_name)
-            fn()
+            getattr(mod, fn_name)()
 
         with lock:
-            state["step"]      = 5
-            state["step_name"] = "done"
-            state["last_run"]  = time.strftime("%H:%M:%S")
+            state.update(step=5, step_name="done", last_run=time.strftime("%H:%M:%S"))
 
     except Exception as e:
+        import traceback
+        tb = traceback.format_exc()
         with lock:
-            state["error"]     = str(e)
-            state["step_name"] = "error"
+            state.update(error=f"{e}\n{tb}", step_name="error")
     finally:
         with lock:
             state["running"] = False
 
 
-# ── Routes ────────────────────────────────────────────────────────
 @app.route("/api/status")
 def api_status():
     with lock:
@@ -93,8 +77,7 @@ def api_run():
     with lock:
         if state["running"]:
             return jsonify({"ok": False, "msg": "Already running"}), 409
-    t = threading.Thread(target=run_pipeline, daemon=True)
-    t.start()
+    threading.Thread(target=run_pipeline, daemon=True).start()
     return jsonify({"ok": True})
 
 
@@ -113,8 +96,7 @@ def api_capacity():
 @app.route("/api/graph/<link>")
 def api_graph(link):
     d = read_json("graph_data.json")
-    if not d:
-        return ("Not found", 404)
+    if not d: return ("Not found", 404)
     return jsonify(d.get(link, []))
 
 
@@ -130,7 +112,26 @@ def api_cell_stats():
     return jsonify(d) if d else ("Not found", 404)
 
 
+# ── Debug endpoint: show first 5 rows of cleaned CSV ──────────────
+@app.route("/api/debug/cell/<int:cell>")
+def api_debug_cell(cell):
+    import csv as csv_mod
+    result = {}
+    for kind in ["pkt_stats", "throughput_slot"]:
+        path = os.path.join(DATA, "cleaned", f"{kind}_cell{cell}.csv")
+        if os.path.isfile(path):
+            with open(path, newline="") as f:
+                rows = list(csv_mod.DictReader(f))
+            result[kind] = {
+                "total_rows": len(rows),
+                "first_5": rows[:5],
+                "last_2":  rows[-2:] if len(rows) >= 2 else rows,
+            }
+        else:
+            result[kind] = "FILE NOT FOUND"
+    return jsonify(result)
+
+
 if __name__ == "__main__":
-    os.chdir(BASE)
     print("FH-OPT API  →  http://localhost:5050")
-    app.run(port=5050, debug=False)
+    app.run(port=5050, debug=False, threaded=True)

@@ -1,145 +1,145 @@
 {
   "1": {
-    "avg_gbps": 1825.8677,
-    "peak_gbps": 3172.96,
+    "avg_gbps": 1956.2868,
+    "peak_gbps": 3383.016,
     "active_slots": 60,
     "total_slots": 60
   },
   "2": {
-    "avg_gbps": 3850.062,
-    "peak_gbps": 7150.9984,
+    "avg_gbps": 4125.0664,
+    "peak_gbps": 8052.264,
     "active_slots": 60,
     "total_slots": 60
   },
   "3": {
-    "avg_gbps": 1889.7204,
-    "peak_gbps": 4062.9792,
+    "avg_gbps": 2024.7004,
+    "peak_gbps": 4665.384,
     "active_slots": 60,
     "total_slots": 60
   },
   "4": {
-    "avg_gbps": 1542.1665,
-    "peak_gbps": 2869.5744,
+    "avg_gbps": 1652.3212,
+    "peak_gbps": 3691.944,
     "active_slots": 60,
     "total_slots": 60
   },
   "5": {
-    "avg_gbps": 1860.2733,
-    "peak_gbps": 4189.248,
+    "avg_gbps": 1993.15,
+    "peak_gbps": 3886.488,
     "active_slots": 60,
     "total_slots": 60
   },
   "6": {
-    "avg_gbps": 3910.7025,
-    "peak_gbps": 8048.0288,
+    "avg_gbps": 4190.0384,
+    "peak_gbps": 7423.536,
     "active_slots": 60,
     "total_slots": 60
   },
   "7": {
-    "avg_gbps": 4029.4169,
-    "peak_gbps": 7951.7984,
+    "avg_gbps": 4317.2324,
+    "peak_gbps": 10173.984,
     "active_slots": 60,
     "total_slots": 60
   },
   "8": {
-    "avg_gbps": 3959.4598,
-    "peak_gbps": 8081.7856,
+    "avg_gbps": 4242.2784,
+    "peak_gbps": 8531.616,
     "active_slots": 60,
     "total_slots": 60
   },
   "9": {
-    "avg_gbps": 1911.3162,
-    "peak_gbps": 3912.7648,
+    "avg_gbps": 2047.8388,
+    "peak_gbps": 4396.344,
     "active_slots": 60,
     "total_slots": 60
   },
   "10": {
-    "avg_gbps": 3831.3109,
-    "peak_gbps": 7933.3632,
+    "avg_gbps": 4104.976,
+    "peak_gbps": 7117.176,
     "active_slots": 60,
     "total_slots": 60
   },
   "11": {
-    "avg_gbps": 1629.236,
-    "peak_gbps": 3131.0496,
+    "avg_gbps": 1745.61,
+    "peak_gbps": 3458.4,
     "active_slots": 60,
     "total_slots": 60
   },
   "12": {
-    "avg_gbps": 1692.9782,
-    "peak_gbps": 3084.0768,
+    "avg_gbps": 1813.9052,
+    "peak_gbps": 3408.432,
     "active_slots": 60,
     "total_slots": 60
   },
   "13": {
-    "avg_gbps": 5159.3196,
-    "peak_gbps": 8212.2208,
+    "avg_gbps": 5527.8424,
+    "peak_gbps": 8032.272,
     "active_slots": 60,
     "total_slots": 60
   },
   "14": {
-    "avg_gbps": 1659.9434,
-    "peak_gbps": 3281.712,
+    "avg_gbps": 1778.5108,
+    "peak_gbps": 3006.888,
     "active_slots": 60,
     "total_slots": 60
   },
   "15": {
-    "avg_gbps": 4454.4535,
-    "peak_gbps": 9751.1456,
+    "avg_gbps": 4772.6288,
+    "peak_gbps": 9538.488,
     "active_slots": 60,
     "total_slots": 60
   },
   "16": {
-    "avg_gbps": 4767.7627,
-    "peak_gbps": 7653.3856,
+    "avg_gbps": 5108.3172,
+    "peak_gbps": 10253.088,
     "active_slots": 60,
     "total_slots": 60
   },
   "17": {
-    "avg_gbps": 1798.7394,
-    "peak_gbps": 2913.2992,
+    "avg_gbps": 1927.2208,
+    "peak_gbps": 3317.328,
     "active_slots": 60,
     "total_slots": 60
   },
   "18": {
-    "avg_gbps": 3444.1225,
-    "peak_gbps": 6435.9232,
+    "avg_gbps": 3690.1312,
+    "peak_gbps": 6434.76,
     "active_slots": 60,
     "total_slots": 60
   },
   "19": {
-    "avg_gbps": 3870.3254,
-    "peak_gbps": 8086.0864,
+    "avg_gbps": 4146.7772,
+    "peak_gbps": 7507.272,
     "active_slots": 60,
     "total_slots": 60
   },
   "20": {
-    "avg_gbps": 1825.6806,
-    "peak_gbps": 3180.8,
+    "avg_gbps": 1956.0864,
+    "peak_gbps": 3425.112,
     "active_slots": 60,
     "total_slots": 60
   },
   "21": {
-    "avg_gbps": 1708.8101,
-    "peak_gbps": 3211.5328,
+    "avg_gbps": 1830.868,
+    "peak_gbps": 3425.664,
     "active_slots": 60,
     "total_slots": 60
   },
   "22": {
-    "avg_gbps": 1652.8501,
-    "peak_gbps": 3220.2688,
+    "avg_gbps": 1770.9108,
+    "peak_gbps": 3591.84,
     "active_slots": 60,
     "total_slots": 60
   },
   "23": {
-    "avg_gbps": 4255.8783,
-    "peak_gbps": 8591.9456,
+    "avg_gbps": 4559.8696,
+    "peak_gbps": 8049.792,
     "active_slots": 60,
     "total_slots": 60
   },
   "24": {
-    "avg_gbps": 3628.9366,
-    "peak_gbps": 6862.352,
+    "avg_gbps": 3888.1464,
+    "peak_gbps": 8022.72,
     "active_slots": 60,
     "total_slots": 60
   }

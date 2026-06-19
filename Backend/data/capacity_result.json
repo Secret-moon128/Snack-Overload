@@ -33,9 +33,9 @@
       23,
       24
     ],
-    "average_gbps": 70159.3327,
-    "peak_gbps": 86154.5664,
-    "required_capacity_no_buffer_gbps": 86154.5664,
+    "average_gbps": 75170.7136,
+    "peak_gbps": 91184.808,
+    "required_capacity_no_buffer_gbps": 91184.808,
     "required_capacity_with_buffer_gbps": 200.0
   },
   "Link3": {
